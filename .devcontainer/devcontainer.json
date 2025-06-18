@@ -12,9 +12,7 @@
 
 	// Use 'postCreateCommand' to run commands after the container is created.
   	"postCreateCommand": "git clone https://github.com/Fohn-Group/fohn-ui.git fohn-ui && git clone https://github.com/Fohn-Group/fohn-js.git fohn-js && git clone https://github.com/Fohn-Group/fohn-css.git fohn-css",
-  	"postStartCommand":[
-			"/bin/sh", "-c", ".devcontainer/script/start.sh"
-	],
+  	"postStartCommand": "sh .devcontainer/script/start.sh",
 	"remoteUser": "vscode",
 	"features": {
 		"ghcr.io/devcontainers/features/node:1": {}
