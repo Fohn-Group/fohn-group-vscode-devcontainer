@@ -18,8 +18,6 @@
 		"ghcr.io/devcontainers/features/node:1": {}
 	},
 
- 	// Uncomment the next line to use a Dockerfile instead of a docker-compose.yml file.
-
 	// Configure tool-specific properties.
 	"customizations": {
 		"vscode": {
@@ -32,7 +30,8 @@
 				"editorconfig.editorconfig",
 				"cweijan.vscode-mysql-client2",
 				"ikappas.composer",
-				"muuvmuuv.vscode-just-php-cs-fixer"
+				"muuvmuuv.vscode-just-php-cs-fixer",
+				"starkwang.markdown"
 			],
 			"settings": {
 				"php.validate.executablePath": "/usr/local/bin/php",
@@ -44,6 +43,4 @@
 			}
 		}
 	}
-	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
-	// "remoteUser": "root"
 }

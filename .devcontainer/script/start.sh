@@ -1,5 +1,7 @@
 #!/bin/sh
 
+echo "Starting Fohn development environment..."
+echo "Installing Composer dependencies"
 composer -d fohn-ui update
 
 echo "install js dependencies"
@@ -10,7 +12,6 @@ npm install --prefix fohn-css
 
 echo "Copying php config"
 sudo cp .devcontainer/config/php/fohn-conf.ini /usr/local/etc/php/conf.d/fohn-conf.ini
-
 
 echo "Copying app local config"
 target_dir="fohn-ui/local"
