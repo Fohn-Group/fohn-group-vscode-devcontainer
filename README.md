@@ -1,4 +1,4 @@
-# Fohn Ggroup Vscode devcontainer
+# Fohn Group Vscode devcontainer
 
 Enable development of Fohn-Ui, Fohn-Js and Fohn-Css within the same devcontainer using Visual Studio.
 
