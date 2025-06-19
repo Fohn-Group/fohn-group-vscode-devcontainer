@@ -6,8 +6,8 @@ Enable development of Fohn-Ui, Fohn-Js and Fohn-Css within the same devcontainer
 
 Create docker services:
 
-Web: PHP with XDebug3, Apache and SQLite.
-MYSQL server: MYSQL Data is kept into the app-data/mysql directory for persisting purpose.
+ - Web: PHP with XDebug3, Apache and SQLite with some extra php extensions.
+ - mysql: Data is kept into the app-data/mysql directory for persisting purpose.
 
 The Web container clone three repositories from Fohn-Group:
 - Fohn-Ui
