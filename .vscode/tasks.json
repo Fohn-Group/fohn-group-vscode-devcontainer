@@ -1,0 +1,17 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "CS-Fixer",
+            "type": "shell",
+            "command": "cd fohn-ui && vendor/bin/php-cs-fixer fix --using-cache=no --diff --verbose --show-progress=dots"
+        },
+        {
+            "label": "PHPStan",
+            "type": "shell",
+            "command": "cd fohn-ui && vendor/bin/phpstan analyse --memory-limit=-1"
+        }
+    ]
+}
