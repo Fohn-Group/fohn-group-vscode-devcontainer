@@ -36,12 +36,16 @@ cd fohn-css
 npm run dev
 ```
 
-The above command will build js ans css files and place them inside the `/public` directory of Fohn-Ui. In order to be able to load build js and css files, instead of production file from cdn, simply set the 'env' config variable to Ui::DEV_ENV from the config.local.php file. This file is located inside the fohn-ui directory. 
+The above command will build js ans css files and place them inside the `/public` directory of Fohn-Ui. In order to be able to load build js and css files, instead of production file from cdn, simply set the 'env' config variable to Ui::DEV_ENV from the config.local.php file. This file is located inside the fohn-ui directory.
 
 
-```
-                                                               config.local.php file
+
+<div style="text-align: right"> config.local.php </div>
+
+```php
+                                                              
     // previous file content
+    /*
      * Environment setting.
      * Uncomment this line in order to develop fohj-js and foh-css.
      * You will need to run `npm run dev` in the fohn-js and fohn-css directories.
