@@ -10,7 +10,7 @@ RUN apt-get -y update && export DEBIAN_FRONTEND=noninteractive \
 
 # Install dependencies for PHP extensions
 RUN docker-php-ext-configure intl \
-    && docker-php-ext-install intl
+    && docker-php-ext-install pdo pdo_mysql mysqli intl
 
 # Create fohn-group directory
 RUN mkdir -p /workspace/fohn-ui \
@@ -24,7 +24,7 @@ RUN mkdir -p /workspace/fohn-ui \
 # Enable mod-rewrite module in apache.
 RUN a2enmod rewrite
 
-    
+
 # [Optional] Uncomment this section to install additional OS packages.
 # RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
 #     && apt-get -y install --no-install-recommends <your-package-list-here>
