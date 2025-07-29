@@ -1,14 +1,14 @@
 version: '3.8'
 
-services: 
+services:
   web:
     build:
       context: .
       dockerfile: Dockerfile
 
-    # Bind devcontainer folder to our container. 
+    # Bind devcontainer folder to our container.
     volumes:
-      - ../.devcontainer:/workspace/.devcontainer:cached 
+      - ../.devcontainer:/workspace/.devcontainer:cached
       - ../.vscode:/workspace/.vscode:cached
 
     # Overrides default command so things don't shut down after the process ends.

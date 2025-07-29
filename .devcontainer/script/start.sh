@@ -15,7 +15,7 @@ sudo cp .devcontainer/config/php/fohn-conf.ini /usr/local/etc/php/conf.d/fohn-co
 
 echo "Copying app local config"
 target_dir="fohn-ui/local"
-mkdir -p "$target_dir" && cp .devcontainer/config/config.local.php "$target_dir/"
+sudo mkdir -p "$target_dir" && sudo cp .devcontainer/config/config.local.php "$target_dir/"
 
 
 echo "Starting Apache server..."
