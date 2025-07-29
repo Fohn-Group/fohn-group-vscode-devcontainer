@@ -11,7 +11,7 @@ echo "install css dependencies"
 npm install --prefix fohn-css
 
 echo "Copying php config"
-sudo cp .devcontainer/config/php/fohn-conf.ini /usr/local/etc/php/conf.d/fohn-conf.ini
+sudo cp .devcontainer/config/php/y-fohn-conf.ini /usr/local/etc/php/conf.d/y-fohn-conf.ini
 
 echo "Copying app local config"
 target_dir="fohn-ui/local"
