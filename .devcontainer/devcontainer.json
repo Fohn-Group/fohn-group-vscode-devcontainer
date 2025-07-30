@@ -31,7 +31,11 @@
 				"cweijan.vscode-mysql-client2",
 				"ikappas.composer",
 				"muuvmuuv.vscode-just-php-cs-fixer",
-				"starkwang.markdown"
+				"starkwang.markdown",
+				"jaguadoromero.vscode-php-create-class",
+				"xdebug.php-debug",
+				"dudemelo.php-essentials",
+				"imgildev.vscode-php-language-pack"
 			],
 			"settings": {
 				"php.validate.executablePath": "/usr/local/bin/php",
