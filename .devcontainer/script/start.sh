@@ -13,10 +13,13 @@ npm install --prefix fohn-css
 echo "Copying php config"
 sudo cp .devcontainer/config/php/y-fohn-conf.ini /usr/local/etc/php/conf.d/y-fohn-conf.ini
 
-echo "Copying app local config"
+echo "Setting up folder and config files"
 target_dir="fohn-ui/local"
 sudo mkdir -p "$target_dir" && sudo cp .devcontainer/config/config.local.php "$target_dir/"
-
+sudo mkdir -p "fohn-ui/build/logs" && sudo chmod 777 fohn-ui/build/logs
+sudo mkdir -p "fohn-ui/build/coverage" && sudo chmod 777 fohn-ui/build/coverage
+sudo chmod 777 fohn-ui/local/*
+sudo cp .devcontainer/config/ui-test-config.local fohn-ui/test
 
 echo "Starting Apache server..."
 sudo service apache2 start
