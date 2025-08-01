@@ -35,7 +35,10 @@
 				"jaguadoromero.vscode-php-create-class",
 				"xdebug.php-debug",
 				"dudemelo.php-essentials",
-				"imgildev.vscode-php-language-pack"
+				"imgildev.vscode-php-language-pack",
+				"eamodio.gitlens",
+				"MehediDracula.php-constructor",
+				"recca0120.vscode-phpunit"
 			],
 			"settings": {
 				"php.validate.executablePath": "/usr/local/bin/php",
