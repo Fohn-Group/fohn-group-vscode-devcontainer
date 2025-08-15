@@ -6,12 +6,14 @@
         {
             "label": "CS-Fixer",
             "type": "shell",
-            "command": "cd fohn-ui && vendor/bin/php-cs-fixer fix --using-cache=no --diff --verbose --show-progress=dots"
+            "command": "cd fohn-ui && vendor/bin/php-cs-fixer fix --using-cache=no --diff --verbose --show-progress=dots",
+            "problemMatcher": []
         },
         {
             "label": "PHPStan",
             "type": "shell",
-            "command": "cd fohn-ui && vendor/bin/phpstan analyse --memory-limit=-1"
+            "command": "cd fohn-ui && vendor/bin/phpstan analyse --memory-limit=-1",
+            "problemMatcher": []
         }
     ]
 }

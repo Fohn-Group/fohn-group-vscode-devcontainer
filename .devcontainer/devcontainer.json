@@ -38,7 +38,8 @@
 				"imgildev.vscode-php-language-pack",
 				"eamodio.gitlens",
 				"MehediDracula.php-constructor",
-				"recca0120.vscode-phpunit"
+				"recca0120.vscode-phpunit",
+				"Vue.volar"
 			],
 			"settings": {
 				"php.validate.executablePath": "/usr/local/bin/php",
