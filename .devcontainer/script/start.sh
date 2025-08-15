@@ -2,7 +2,7 @@
 
 echo "Starting Fohn development environment..."
 echo "Installing Composer dependencies"
-composer -d fohn-ui update
+composer -d fohn-ui install
 
 echo "install js dependencies"
 npm install --prefix fohn-js
